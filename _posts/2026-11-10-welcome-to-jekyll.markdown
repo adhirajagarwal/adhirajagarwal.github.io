@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: programming
 title:  "Welcome to Jekyll!"
 date:   2026-11-10 16:00:46 +0530
 categories: jekyll update

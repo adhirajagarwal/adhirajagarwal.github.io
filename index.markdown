@@ -7,8 +7,7 @@ layout: main
 
 Hello, my name is Adhiraj. I am a math student. I am currently teaching myself *introductory abstract algebra* and *ordinary differential equations*. I really enjoy the creativity one can employ in mathematics. Studying mathematics makes me happy. I think problem solving, especially the mathematical kind, is a rewarding experience. Studying math also allows to me study something very broad. I am currently self-taught and I hope to study mathematics in university.
 
-Apart from mathematics, I like reading fiction books and in my free time, I do some programming. I also like thinking. I enjoy listening to the sounds of nature, watching the birds build nests and feeling the cold wind by a lake.
-
+Apart from mathematics, I like reading fiction books. Currently I am reading *Moby Dick* by Herman Meville and *the Brothers Karamazov* by *Fyodor Dostoevesky*. I enjoy nature. In my free time, I program sometimes.
 
 <figure>
   <img src="/assets/bull.jpg" alt="Le Taureau (the Bull), Pablo Picasso, 1946">
