@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -57,107 +60,95 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* MAIN CONTENT STARTS HERE ALERT */
+
+
 :root{
-  /* colors */
-    --color-bg: #fff;
-    --color-fg: #000;
+ --col-grad-1: #F5EBDD;
+ --col-bg: #FFFFFF;
+ --col-grad-2: #E4EEF0;
+ --col-complementary: #B95746;
+--col-tertiary: #2E6B8A;
+--color-text: #1e1e1e;
 
-    background-color: var(--color-bg);
-    color:var(--color-fg) ;
-
-    /* sizes */
-
-
-    /* fonts */
-      font-size: 1.2em;
-
-  font-family:  'Lato', sans-serif;
 }
+
 
 /* Main layout */
 
- 
+
 
 /* Navigation Wrapper */
 
-.pri-nav{
-  width: auto;
-  margin: 0;
-}
+body{
+  background: var(--col-bg);
+  color: var(--color-text);
 
-.pri-nav a{
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
-
-.pri-nav-list{
+  background: linear-gradient(180deg,var(--col-grad-1) 0%, var(--col-bg) 50%, var(--col-grad-2) 100%);
+  height: 100vh;
+  width: 100vw;
   margin:0;
-  /* width: auto; */
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding:0;
-  gap:10px;
+  padding:zero;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+
 }
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1rem
+}
+
 
 main{
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-blockquote{
-  color:inherit;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-a{
-  color: inherit;
-}
-
-figcaption{
-  text-align: center;
-}
-
-img{
-  margin-inline:auto;
-  /* margin-block: 15px; */
-}
-
-p{
-  margin-bottom: 15px;
-}
-
-h2{
-  margin-block-start: 1em;
-  margin-block-end: 0.4em;
-}
-
-/* post list */
-ul.posts-list{
-  list-style: none;
-  margin: 0;
-  padding-inline: 0;
+    max-width: 800px;
+    margin-inline: auto;
+  font-size: 1.3em;
 
 }
 
-ul.posts-list li{
-  margin: 0;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Mate', sans-serif;
 }
 
-ul.posts-list li span{
-  color: grey;
-  font-family: monospace;
-  margin-inline-start: 0.6rem;
-  font-size: 0.85em;
-  text-transform: uppercase;
+/*h1, h2, h3{
+    color:var(--col-complementary);
+}*/
+
+.primary-header{
+margin-block: auto;
+user-select: none;
+min-height: calc(100vh - 64px - 2rem);
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+ justify-content: center;
+ padding-block: 2rem;
 }
 
-ul.posts-list li a{
-  text-decoration: none;
+
+
+body a{
+    color: var(--col-tertiary);
+    text-decoration: none;
+}
+
+/* navbar */
+
+.pri-nav ul{
+    font-size: 1.3em;
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-inline: auto;
+    width: fit-content;
+    padding-bottom: 1rem;
+}
+
+section.posts{
+    padding-block: 2rem;
 }

@@ -9,13 +9,16 @@ I am currently studying *Introductory Abstract Algebra* and *ordinary differenti
 - Arnol'd, Vladimir. Ordinary Differential Equations. 3rd edition, translation by Roger Cooke, Springer-Verlag, 1992.
 - [Paul's Online Math Notes](https://tutorial.math.lamar.edu/)
 
- 
-## Posts
+
+<section class="posts">
+    <h2>Blog Posts</h2>
 
 <ul class="posts-list">
-  {% for post in site.posts %}
+  {% for post in site.categories["mathematics"] %}
     <li>
-     <a href="{{ post.url }}">{{ post.title }}</a> <span> {{ post.month }}. </span> 
+     <a href="{{ post.url }}">{{ post.title }}</a> <span> ({{ post.month }}) </span> 
     </li>
   {% endfor %}
 </ul>
+
+</section>
