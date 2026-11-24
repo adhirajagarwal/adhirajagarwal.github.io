@@ -1,6 +1,0 @@
----
-layout: main
----
-
-
-Programming. WIP

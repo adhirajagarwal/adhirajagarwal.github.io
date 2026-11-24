@@ -100,7 +100,6 @@ body{
     padding: 1rem
 }
 
-
 main{
     max-width: 800px;
     margin-inline: auto;
@@ -108,15 +107,56 @@ main{
 
 }
 
+
+/*Common Styles*/
 h1, h2, h3, h4, h5, h6{
   font-family: 'Mate', sans-serif;
+}
+
+a{
+    color: var(--col-tertiary);
+    text-decoration: underline;
+
+}
+
+i, b, em{
+    color: var(--col-complementary);
+}
+
+
+
+button{
+    padding: 10px ;
+    border: none;
+    background-color: var(--col-complementary);
+    color: var(--col-grad-1);
+}
+
+button a{
+    color: var(--col-grad-1);
+    text-decoration: none;
 }
 
 /*h1, h2, h3{
     color:var(--col-complementary);
 }*/
 
-.primary-header{
+/*Navbar*/
+.pri-nav ul{
+    font-size: 1.3em;
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-inline: auto;
+    width: fit-content;
+    padding-bottom: 1rem;
+}
+
+
+/*Main Page*/
+.main_header{
 margin-block: auto;
 user-select: none;
 min-height: calc(100vh - 64px - 2rem);
@@ -129,25 +169,6 @@ align-items: center;
 }
 
 
-
-body a{
-    color: var(--col-tertiary);
-    text-decoration: none;
-}
-
-/* navbar */
-
-.pri-nav ul{
-    font-size: 1.3em;
-    list-style: none;
-    padding:0;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-inline: auto;
-    width: fit-content;
-    padding-bottom: 1rem;
-}
 
 section.posts{
     padding-block: 2rem;
